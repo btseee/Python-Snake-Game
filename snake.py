@@ -97,8 +97,8 @@ window = pygame.display.set_mode((500+20,500+20))
 
 #Zurag duudah 
 background = pygame.image.load("./assets/grass.png")
-head=pygame.image.load("/assets/head.png")
-food=pygame.image.load("/assets/food.png")
+head=pygame.image.load("./assets/head.png")
+food=pygame.image.load("./assets/food.png")
 
 #Caption
 pygame.display.set_caption("Могой "+emoji.emojize(":snake: :snake: :snake:"))
