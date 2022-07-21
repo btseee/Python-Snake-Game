@@ -96,9 +96,9 @@ class FoodSpawn():
 window = pygame.display.set_mode((500+20,500+20))
 
 #Zurag duudah 
-background = pygame.image.load("grass.png")
-head=pygame.image.load("head.png")
-food=pygame.image.load("food.png")
+background = pygame.image.load("./assets/grass.png")
+head=pygame.image.load("/assets/head.png")
+food=pygame.image.load("/assets/food.png")
 
 #Caption
 pygame.display.set_caption("Могой "+emoji.emojize(":snake: :snake: :snake:"))
@@ -130,7 +130,7 @@ def get_high_score():
  
     #File aas unshih
     try:
-        high_score_file = open("high_score.txt", "r")
+        high_score_file = open("./stats/high_score.txt", "r")
         high_score = int(high_score_file.read())
         high_score_file.close()
     except IOError:
@@ -146,7 +146,7 @@ def get_high_score():
 def save_high_score(new_high_score):
     try:
         #File daa bichih
-        high_score_file = open("high_score.txt", "w")
+        high_score_file = open("./stats/high_score.txt", "w")
         high_score_file.write(str(new_high_score))
         high_score_file.close()
     except IOError:
